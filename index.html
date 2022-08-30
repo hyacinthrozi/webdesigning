@@ -1,22 +1,93 @@
-<html>
+<1!DOCTYPE html>
+    <html>
 
-<head>
-    <title>
-        my first class of web
+    <head>
+        <title>css templates</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=divice-width, initial-scale=1">
+        <style>
+            * {
+                box-sizing: border-box;
+            }
 
-    </title>
-</head>
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+            }
 
-<body>
-    <h1>
-        web desigining
-    </h1>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora, quis sit dolor in blanditiis perferendis at
-        magnam accusantium incidunt sunt voluptates ut quidem error dolores ducimus quae veritatis explicabo fuga?</p>
-    <p style="color:green ;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque, repellat officiis magnam, asperiores eos
-        quam consectetur ea adipisci blanditiis reprehenderit nisi ad sunt dolorem laudantium fuga tenetur, quos amet
-        quaerat.</p>
-        <h5 style="color: red;">jgjgjg</h5>
-</body>
+            /* Style the header */
+            header {
+                background-color: #666;
+                padding: 30px;
+                text-align: center;
+                font-size: 34px;
+                color: white;
+            }
 
-</html>
+            /* Create two column/boxes that floats next to each other */
+            nav {
+                float: left;
+                width: 30%;
+                height: 300px;
+                /* Only for demonstration should be received */
+                background: #ccc;
+                padding: 20px;
+            }
+
+            /* Style the list inside the menu  */
+            nav ul {
+                list-style-type: none;
+                padding: 0;
+            }
+
+            article {
+                float: left;
+                padding: 20px;
+                width: 70%;
+                background-color: #f1f1f1;
+                height: 300px;
+                /* only for fdemonstration should be removed */
+            }
+
+            /* Clear float ofter tghe column */
+            section::after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+
+            /* style the footer  */
+            footer {
+                background-color: #777;
+
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <header>
+            <h2> cites</h2>
+        </header>
+        <section>
+            <nav>
+                <ul>
+                    <li><a href="#">landon</a></li>
+                    <li><a href="#">paris</a></li>
+                    <li><a href="#">tokyo</a></li>
+                </ul>
+            </nav>
+            <article>
+                <h1>London</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis assumenda esse et facilis quos
+                    commodi numquam soluta quisquam, fugit accusantium labore possimus nam a quo quae ipsum enim
+                    voluptatibus dolorum.
+                </p>
+            </article>
+        </section>
+
+        <footer>
+            <p>footer</p>
+        </footer>
+    </body>
+
+    </html>
